@@ -53,7 +53,7 @@ function App() {
 				{hasQuotes && (
 					<>
 						<h3 className="quote yellow-black">
-							<b>Who Said</b> "{answer.quote}"
+							<b>Who Said</b> " {answer.quote} "
 						</h3>
 						<Options
 							quotes={quotes}
@@ -63,7 +63,13 @@ function App() {
 						/>
 					</>
 				)}
-				<h2 className="yellow-black">Score: {score}</h2>
+				<h2
+					className={`score yellow-black ${
+						score > 0 ? "green-font" : score === 0 ? "" : "red-font"
+					}`}
+				>
+					Score: {score}
+				</h2>
 			</div>
 		);
 	}

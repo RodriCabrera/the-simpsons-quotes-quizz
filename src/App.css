@@ -11,6 +11,9 @@
 	background-size: cover;
 	background-position: bottom;
 	font-family: "Rock Salt", cursive;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 header {
@@ -30,4 +33,14 @@ header {
 	text-align: center;
 	font-size: 1.5rem;
 	letter-spacing: 2px;
+	padding: 1rem;
+}
+.score {
+	text-align: center;
+}
+.green-font {
+	color: rgb(0, 255, 0);
+}
+.red-font {
+	color: red;
 }

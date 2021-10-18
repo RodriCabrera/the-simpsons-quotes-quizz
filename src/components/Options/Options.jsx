@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import CharacterCard from "../CharacterCard/CharacterCard";
 import "./Options.css";
 
 const Options = ({ quotes, hasQuotes, checkIfAnswer, answer }) => {
+	const [hasChoosen, setHasChoosen] = useState(false);
+
 	function uniqCharactersWithImages2() {
 		const charactersAgregados = [];
 		const uniqQuotes = [];
@@ -23,6 +25,8 @@ const Options = ({ quotes, hasQuotes, checkIfAnswer, answer }) => {
 				elem={elem}
 				checkIfAnswer={checkIfAnswer}
 				answer={answer}
+				hasChoosen={hasChoosen}
+				setHasChoosen={setHasChoosen}
 			/>
 		));
 	};

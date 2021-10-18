@@ -52,7 +52,9 @@ function App() {
 				</header>
 				{hasQuotes && (
 					<>
-						<h3 className="quote yellow-black">"{answer.quote}"</h3>
+						<h3 className="quote yellow-black">
+							<b>Who Said</b> "{answer.quote}"
+						</h3>
 						<Options
 							quotes={quotes}
 							hasQuotes={hasQuotes}

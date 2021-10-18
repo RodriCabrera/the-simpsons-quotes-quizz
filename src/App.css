@@ -1,12 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
 	color: whitesmoke;
 }
 .App {
-	height: 100vh;
+	min-height: 100vh;
 	background-color: rgb(29, 29, 29);
-	/* background-image: url("https://media1.popsugar-assets.com/files/thumbor/bzZIujvmK6EiajFntYJeDoqMbvI/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/04/08/956/n/1922507/5b76eee404090c1b_The_Simpsons/i/Simpsons-Zoom-Background.png"); */
+	background-image: url("https://media1.popsugar-assets.com/files/thumbor/bzZIujvmK6EiajFntYJeDoqMbvI/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/04/08/956/n/1922507/5b76eee404090c1b_The_Simpsons/i/Simpsons-Zoom-Background.png");
 	background-size: cover;
 	background-position: bottom;
+	font-family: "Rock Salt", cursive;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.header-image {
+	height: 200px;
+}
+.yellow-black {
+	color: yellow;
+	text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black,
+		1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+.quote {
+	text-align: center;
+	font-size: 1.5rem;
+	letter-spacing: 2px;
 }

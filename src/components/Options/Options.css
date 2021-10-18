@@ -1,0 +1,22 @@
+.character-card {
+	background-color: rgba(106, 116, 211, 0.85);
+	border-radius: 1rem;
+	margin: 1rem;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+		rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	transition: 0.4s all ease;
+}
+.character-card:hover {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.character-image {
+	height: 300px;
+}
+.options-container {
+	display: flex;
+	justify-content: center;
+}
+.wrong-answer {
+	background-color: red;
+}

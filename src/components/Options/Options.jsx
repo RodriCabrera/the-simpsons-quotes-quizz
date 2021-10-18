@@ -1,7 +1,8 @@
 import React from "react";
+import CharacterCard from "../CharacterCard/CharacterCard";
 import "./Options.css";
 
-const Options = ({ quotes, hasQuotes, checkIfAnswer }) => {
+const Options = ({ quotes, hasQuotes, checkIfAnswer, answer }) => {
 	function uniqCharactersWithImages2() {
 		const charactersAgregados = [];
 		const uniqQuotes = [];
@@ -14,20 +15,15 @@ const Options = ({ quotes, hasQuotes, checkIfAnswer }) => {
 		return uniqQuotes;
 	}
 	console.log("uniq2", uniqCharactersWithImages2());
+
 	const mapCharacters = () => {
 		return uniqCharactersWithImages2().map((elem) => (
-			<div
-				className="character-card"
+			<CharacterCard
 				key={elem.character}
-				onClick={checkIfAnswer}
-			>
-				<img
-					className="character-image"
-					src={elem.image}
-					alt="avatar"
-					id={elem.character}
-				/>
-			</div>
+				elem={elem}
+				checkIfAnswer={checkIfAnswer}
+				answer={answer}
+			/>
 		));
 	};
 	return (

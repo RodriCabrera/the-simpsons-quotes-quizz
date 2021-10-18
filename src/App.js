@@ -11,7 +11,7 @@ function App() {
 	const getRandomInt = (min, max) => {
 		return Math.floor(Math.random() * (max - min)) + min;
 	};
-
+	console.log(answer);
 	useEffect(() => {
 		fetch("https://thesimpsonsquoteapi.glitch.me/quotes?count=5")
 			.then((res) => res.json())
@@ -26,8 +26,9 @@ function App() {
 			);
 	}, [score]);
 	console.log(quotes);
-	const checkIfAnswer = (e) => {
-		if (e.target.id === answer.character) {
+
+	const checkIfAnswer = (character) => {
+		if (character === answer.character) {
 			setScore((prevScore) => setScore(prevScore + 1));
 			console.log("correcto");
 		} else {
@@ -48,7 +49,6 @@ function App() {
 						alt="header"
 					/>
 					<h1 className="yellow-black"> QUOTES QUIZZ</h1>
-					<h2 className="yellow-black">Correct answers: {score}</h2>
 				</header>
 				{hasQuotes && (
 					<>
@@ -61,6 +61,7 @@ function App() {
 						/>
 					</>
 				)}
+				<h2 className="yellow-black">Score: {score}</h2>
 			</div>
 		);
 	}

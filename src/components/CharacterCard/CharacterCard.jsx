@@ -21,7 +21,7 @@ const CharacterCard = ({
 		setIsActive(true);
 		setTimeout(() => {
 			checkIfAnswer(selectedCharacter);
-		}, 1200);
+		}, 1000);
 	};
 
 	const conditionalClassName = () => {

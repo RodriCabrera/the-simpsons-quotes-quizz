@@ -13,6 +13,27 @@
 .character-image {
 	height: 300px;
 }
+@media screen and (max-width: 1200px) {
+	.character-image {
+		height: 250px;
+	}
+	.character-card {
+		margin: 5px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.character-image {
+		height: 200px;
+	}
+	.character-card {
+		margin: 2px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.character-image {
+		height: 150px;
+	}
+}
 .wrong-answer {
 	background-color: rgba(255, 0, 0, 0.822);
 }

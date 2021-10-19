@@ -14,16 +14,20 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	text-align: center;
 }
-
+.title {
+	font-size: 1.6rem;
+}
 header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 .header-image {
-	height: 150px;
+	height: 200px;
 }
+
 .yellow-black {
 	color: yellow;
 	text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black,
@@ -43,4 +47,22 @@ header {
 }
 .red-font {
 	color: red;
+}
+@media screen and (max-width: 1000px) {
+	.header-image {
+		height: 150px;
+	}
+	.quote {
+		font-size: 1.5rem;
+		letter-spacing: 1px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.header-image {
+		height: 100px;
+	}
+	.quote {
+		font-size: 1.2rem;
+		letter-spacing: 1px;
+	}
 }

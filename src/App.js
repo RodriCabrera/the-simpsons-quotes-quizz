@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Options from "./components/Options/Options";
-
+import Footer from "./components/Footer/Footer";
 function App() {
 	const [quotes, setQuotes] = useState([]);
 	const [answer, setAnswer] = useState([]);
@@ -73,6 +73,7 @@ function App() {
 					Score: {score}
 				</h2>
 				<h3>Round: {rounds}</h3>
+				<Footer />
 			</div>
 		);
 	}
